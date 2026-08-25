@@ -1,4 +1,27 @@
-# OT Lab3 (DevSecOps)
+# ot-lab-sdlc-devsecops
 
-Web applications are playing a vital part in today's digital world. Knowing how to find the security issues laying inside your web application before its deployment and finding its vulnerabilities before others after deployment would be the majority of your tasks as a Security Specialist.
-Moreover, almost all companies use microservice architecture as well as DevOps methodology. Therefore in this lab, you will learn how to integrate security tools into your CI/CD pipeline and continuously build, security test, and deploy the secure software. In simple words, how to implement the DevSecOps CI/CD pipeline.
+The Java web application used as the scan target for a DevSecOps pipeline lab.
+University coursework, 2022.
+
+The exercise was integrating security tooling into a CI/CD pipeline — static
+analysis, dependency scanning and a security gate between build and deploy —
+against an application with a realistic surface to find issues in. This
+repository holds that application: a Spring MVC stack with Spring Security,
+Hibernate/JPA over MySQL, and JSP views.
+
+## Stack
+
+- Spring MVC, Spring Security
+- Hibernate / Spring Data JPA, MySQL
+- Maven build (`mvn clean package`)
+
+## Scope
+
+The application source is upstream sample code, kept here as the target under
+test. The pipeline configuration and scanner setup lived in the CI server and
+are not part of this repository — so this repo shows what was scanned, not how
+the scanning was wired up.
+
+## Notes
+
+Coursework. The application is intended to have findings in it; do not deploy it.
